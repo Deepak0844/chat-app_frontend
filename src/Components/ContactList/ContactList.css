@@ -1,0 +1,109 @@
+.contactContainer {
+  border-right: 0.2px solid #6b69795b;
+  overflow: hidden;
+}
+.contactContainer .contactHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px;
+  background-color: #2a3942;
+}
+.contactContainer .contactList {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-y: scroll;
+  height: 100vh;
+  border-bottom: 1px solid #374045;
+}
+.contactContainer .contactList::-webkit-scrollbar {
+  width: 4px;
+  border-radius: 16px;
+}
+.contactContainer .contactList::-webkit-scrollbar-thumb {
+  background-color: #374045;
+  border-radius: 16px;
+  max-height: 20px;
+}
+.contactContainer .contact {
+  background: transparent;
+  min-height: 50px;
+  cursor: pointer;
+  width: 100%;
+  padding: 6px;
+  padding-left: 20px;
+  padding-right: 10px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  transition: 0.5s ease-in-out;
+  border-bottom: 1px solid #374045;
+}
+.contactContainer .selected {
+  background-color: #2a3942;
+}
+.contactContainer .unSelected:hover {
+  background-color: #2a39428e;
+}
+.contactContainer .contact:nth-child(1) {
+  margin-top: 10px;
+}
+.userName > p {
+  font-family: "poppins";
+  font-size: 15px;
+}
+.userName h6,
+.userName span {
+  font-family: "Varela Round";
+  font-size: 10px;
+  padding-top: 5px;
+  font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.userName {
+  width: 100%;
+}
+.lastMessage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+.noResult {
+  font-family: poppins;
+  padding: 10px;
+}
+
+.searchInput {
+  width: 80%;
+  margin: 10px 0;
+  height: 17px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  padding: 5px;
+  border: 1px solid #2a3942;
+  background-color: transparent;
+  color: white;
+}
+
+.searchInput:focus {
+  outline: 1px solid #354b59;
+}
+
+@media (max-width: 700px) {
+  .userAvatar {
+    display: none;
+  }
+  .contactContainer .contact {
+    width: 90%;
+    padding: 6px;
+    padding-left: 8px;
+    padding-right: 10px;
+  }
+}

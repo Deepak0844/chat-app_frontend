@@ -1,0 +1,98 @@
+.currentChatContainer {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.currentChatContainer .chatHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #2a3942;
+  padding: 11px;
+  width: 100%;
+}
+.currentChatContainer .chatHeader h3 {
+  font-family: "Varela Round";
+  font-weight: 400;
+}
+.currentChatContainer .messageBox {
+  overflow: auto;
+  padding: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-image: url("https://wallpaperaccess.com/full/43654.jpg");
+  background-size: cover;
+  filter: contrast(100%);
+}
+.currentChatContainer .messageBox::-webkit-scrollbar {
+  width: 4px;
+  border-radius: 16px;
+}
+.currentChatContainer .messageBox::-webkit-scrollbar-thumb {
+  background-color: #374045;
+  border-radius: 16px;
+  max-height: 20px;
+}
+
+.currentChatContainer .messageBox .message {
+  display: flex;
+  align-items: center;
+}
+.currentChatContainer .messageBox .content {
+  max-width: 50%;
+  overflow-wrap: break-word;
+  font-size: 16px;
+  border-radius: 16px;
+  padding: 10px;
+  position: relative;
+}
+
+.currentChatContainer .messageBox .sended {
+  justify-content: flex-end;
+}
+
+.currentChatContainer .messageBox .sended .content {
+  background-color: #005c4b;
+  background-color: orange;
+  color: black;
+  font-family: poppins;
+  font-size: 14px;
+  padding-right: 55px;
+}
+
+.currentChatContainer .messageBox .recieved {
+  justify-content: flex-start;
+}
+
+.currentChatContainer .messageBox .recieved .content {
+  background-color: #3d4a52;
+  background-color: rgb(24, 19, 131);
+  font-family: poppins;
+  font-size: 14px;
+  padding-right: 55px;
+}
+.currentChatContainer .messageBox .time {
+  position: absolute;
+  font-size: 9px;
+  bottom: 3px;
+  right: 10px;
+  font-family: "Varela Round";
+}
+
+@media (max-width: 700px) {
+  .currentChatContainer .messageBox {
+    padding: 10px;
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 350px) {
+  .currentChatContainer .messageBox {
+    padding: 5px;
+    padding-top: 10px;
+  }
+}

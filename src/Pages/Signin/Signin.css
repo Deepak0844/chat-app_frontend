@@ -1,0 +1,55 @@
+.signInFormContainer {
+  background-image: url("https://prmceam.ac.in/wp-content/uploads/2017/05/background-learner1.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signInForm {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.24);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.1px);
+  -webkit-backdrop-filter: blur(5.1px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  width: 400px;
+  padding: 20px;
+}
+.signInBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.signInInputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+.signInForm > h2 {
+  font-family: "Varela Round";
+}
+.optionBtn {
+  margin: 0;
+  font-family: "poppins";
+  padding: 0;
+}
+@media (max-width: 600px) {
+  .signInForm {
+    margin: 10px;
+    width: 345px;
+    top: 40%;
+  }
+}
+
+@media (max-width: 300px) {
+  .signInForm {
+    width: 270px;
+    left: 49.5%;
+    top: 50%;
+  }
+}

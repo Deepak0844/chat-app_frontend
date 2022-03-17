@@ -1,0 +1,21 @@
+.HomeContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.HomeContainer h1 {
+  font-family: "Varela Round";
+}
+
+.HomeContainer h3 {
+  font-family: "poppins";
+}
+@media (max-width: 700px) {
+  .HomeContainer {
+    padding: 10px;
+    text-align: center;
+    justify-content: start;
+    margin-top: 40%;
+  }
+}

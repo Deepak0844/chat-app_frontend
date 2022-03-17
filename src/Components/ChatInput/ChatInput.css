@@ -1,0 +1,66 @@
+.inputContainer {
+  display: flex;
+  background-color: #202c33;
+  align-items: center;
+  padding: 3px;
+}
+.inputBox {
+  display: flex;
+  width: 100%;
+  padding: 3px;
+}
+.inputBox input {
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  background-color: #2a3942;
+  color: white;
+}
+.inputContainer input::placeholder {
+  padding: 10px;
+  color: #8696a0;
+}
+/* emoji */
+.inputContainer .emoji {
+  position: relative;
+}
+.inputContainer .emoji-picker-react {
+  position: absolute;
+  color: white;
+  top: -350px;
+  background-color: #080420;
+  box-shadow: 0 5px 10px #0939b3;
+  border-color: #0939b3;
+}
+.inputContainer .emoji-search {
+  background-color: transparent;
+  border-color: #0939b3;
+}
+.inputContainer .emoji-group:before {
+  background-color: #080420;
+}
+.inputContainer .emoji-categories {
+  filter: contrast(0);
+}
+.emoji-scroll-wrapper::-webkit-scrollbar {
+  background-color: #080420;
+  width: 5px;
+}
+.emoji-scroll-wrapper::-webkit-scrollbar-thumb {
+  background-color: #0939b3;
+}
+@media (max-width: 700px) {
+  .inputContainer .emoji-picker-react {
+    width: 250px;
+    height: 300px;
+    top: -310px;
+  }
+}
+@media (max-width: 300px) {
+  .inputContainer input::placeholder {
+    padding: 5px;
+    font-size: 11px;
+  }
+}
